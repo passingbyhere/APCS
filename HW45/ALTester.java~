@@ -1,0 +1,12 @@
+//Elaina Chung
+//APCS pd1
+//HW45 -- Sorted
+//2016-12-14
+
+import java.util.ArrayList
+public class ALTester
+{
+    public static void main(String[] args){
+	int[] a = new ArrayList<Interger>(23);
+    }
+}
