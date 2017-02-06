@@ -1,0 +1,54 @@
+//Elaina Chung
+//APCS pd1
+//HW#36 -- Be Rational
+//2016-11-28
+
+public class Rational{
+    private int numerator;
+    private int denominator;
+    private Rational(){
+	numerator = 0;
+	denominator = 1;
+    }
+    public Rational(int n, int d){
+	this();
+	if(d == 0){
+	    numerator = 0;
+	    denominator = 1;
+	}
+	else{
+	    numerator = n;
+	    denominator = d;
+	}
+    }
+    public String toString(){
+	return numerator + "/" + denominator;
+    }
+    //returns floating point of n/d
+    public static float floxatValue(int n, int d){
+	return (float)(n/d);
+    }
+    //multiplies this by r, changes this anr r stays the same
+    public void multiply(Rational r){
+        this.multiply(r);
+    }
+    //divides this by r, changes this anr r stays the same
+    public void divide(Rational r){
+	this.divide(r);
+    }
+    public static void main(String[] args){
+	Rational r = new Rational(2,3);
+	Rational s = new Rational(1,2);
+	System.out.println(r);
+	System.out.println(s);
+	System.out.println(floatValue(s.numerator, s.denominator));
+	r.multiply(s);
+	System.out.println(r);
+	System.out.println(s);
+	System.out.println(floatValue(s.numerator, s.denominator));
+	r.divide(s);
+	System.out.println(r);	
+	System.out.println(s);
+	System.out.println(floatValue(s.numerator, s.denominator));
+    }
+}

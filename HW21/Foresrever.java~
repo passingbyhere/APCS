@@ -1,0 +1,23 @@
+/*
+Elaina Chung
+APCS1 pd 1
+HW #21: For the Lulz Love of Strings .
+2016-10-24
+*/
+public class Foresrever{
+    //precond: non-negative integer
+    //postcond: String rep of fence with precond number of posts
+    //FOR loop
+    public String fenceF(int posts){
+	String fence="";
+	for(int x; x > 1; x-=1){
+	    fence+="|--";
+	}
+	fence+="|";
+	reutrn fence;
+    }
+    public static void main(String[] args){
+	System.out.println(fenceF(1));
+	System.out.println(fenceF(3));
+    }
+}

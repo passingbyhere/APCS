@@ -1,0 +1,20 @@
+public class Test {
+
+    public static void main(String[] args) {
+
+        BankAccount RichardGreen = new BankAccount("Richard Green", "pa55w0rd", 2222, 1000.0);
+        RichardGreen.printit();
+        RichardGreen.depositandwithdraw(55);
+        RichardGreen.setPassword("testpass");
+        RichardGreen.printit();
+
+        BankAccount GeorgeBrown = new BankAccount("George Brown", "passwordd", 3562, 500.10);
+        GeorgeBrown.printit();
+        GeorgeBrown.depositandwithdraw(-22.1);
+        GeorgeBrown.printit();
+
+        BankAccount TestPerson = new BankAccount();
+        TestPerson.setPIN(2849);
+        TestPerson.printit();
+    }
+}
